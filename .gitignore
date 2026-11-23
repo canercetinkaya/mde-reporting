@@ -1,0 +1,22 @@
+# Yerel gizli veriler ve müşteri yapılandırmaları (asla commit edilmez)
+customer.json
+secret.txt
+smtp.txt
+*.pfx
+*.p12
+*.key
+*.pem
+*.cer
+
+# Çalışma çıktıları ve arşivler
+Output/
+Archive/
+Logs/
+*.log
+*.pdf
+
+# İşletim sistemi / editör kalıntıları
+.DS_Store
+Thumbs.db
+.vscode/
+.agents/

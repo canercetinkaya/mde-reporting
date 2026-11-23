@@ -1,0 +1,49 @@
+{
+  "_aciklama": "Bu dosya Install-MDEReport.ps1 tarafindan otomatik uretilir. Elle duzenlemek isterseniz customer.json adiyla kaydedin.",
+
+  "CustomerName": "Contoso Corp",
+  "ProviderName": "Security Operations",
+  "TenantId": "00000000-0000-0000-0000-000000000000",
+  "ClientId": "00000000-0000-0000-0000-000000000000",
+  "AuthMode": "Secret",
+  "CertificateThumbprint": "",
+  "ProxyUrl": "",
+
+  "Schedule": {
+    "Weekly": true,
+    "WeeklyDay": "MON",
+    "WeeklyTime": "07:30",
+    "Monthly": true,
+    "MonthlyDay": 1,
+    "MonthlyTime": "06:00"
+  },
+
+  "Report": {
+    "Format": "HTML",
+    "AttachPdf": true,
+    "LogoPath": "logo.png",
+    "Language": "tr"
+  },
+
+  "Mail": {
+    "Method": "Graph",
+    "From": "mde-report@contoso.com",
+    "To": [ "soc@contoso.com" ],
+    "Cc": [ "secops@contoso.com" ],
+    "AlertTo": "secops@contoso.com"
+  },
+
+  "Smtp": {
+    "Server": "smtp.office365.com",
+    "Port": 587,
+    "UseSsl": true,
+    "User": ""
+  },
+
+  "Thresholds": {
+    "InactiveDevicePct": 5,
+    "RiskyHostAlerts": 3,
+    "RansomRenameCount": 100,
+    "OpenIncidentAgeDays": 14
+  }
+}
